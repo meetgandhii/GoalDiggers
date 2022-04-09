@@ -9,6 +9,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import './step1.css'
 import logo from './symptoms.mp4';
 
+
 const Step1 = () => {
   return (
     <>
@@ -25,11 +26,11 @@ const Step1 = () => {
                 </div>
             </div>
             <div className="col">
-                <video width="320" height="240" loop autoPlay>
+                {/* <video width="320" height="240" loop autoPlay>
                     <source src={logo} type="video/mp4"/>
                         Your browser does not support the video tag.
-                </video>
-                {/* <img src="https://document-export.canva.com/DGDNo/DAE9YgDGDNo/36/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220408%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220408T181150Z&X-Amz-Expires=64896&X-Amz-Signature=00084e62ce94e6b82b0f0b34058c40d2f2d038b55c31ac41a4fd8bd9d311c669&X-Amz-SignedHeaders=host&response-expires=Sat%2C%2009%20Apr%202022%2012%3A13%3A26%20GMT"></img> */}
+                </video> */}
+                <img src="https://document-export.canva.com/DGDNo/DAE9YgDGDNo/36/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20220408%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220408T181150Z&X-Amz-Expires=64896&X-Amz-Signature=00084e62ce94e6b82b0f0b34058c40d2f2d038b55c31ac41a4fd8bd9d311c669&X-Amz-SignedHeaders=host&response-expires=Sat%2C%2009%20Apr%202022%2012%3A13%3A26%20GMT"></img>
             </div>
         </div>
     </div>
