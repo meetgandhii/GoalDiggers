@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/meetgandhii/GoalDiggers#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10"
   }
 }
