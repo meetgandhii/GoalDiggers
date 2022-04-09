@@ -22,11 +22,11 @@ const Step1 = () => {
             <div className="step1" >
                 <div className="container">
                     <div className="row">
-                        <div id="adult" className="col d-flex justify-content-center align-items-center">
-                            <div className="container">
-                            <a><img className="bbutton glow-button" src={adult} height="300px" width="200px"></img></a>
-                            <a><img className="bbutton glow-button" src={child} height="300px" width="200px"></img></a>
-                            </div>
+                        <div id="adult">
+                            <h3 id="head">Select Whether you are a Child or an Adult</h3>
+                            <a><img className="choice hov" src={adult}></img></a>
+                            <a><img className="choice hov" src={child}></img></a>
+                            
                         </div>
                         <div className="col d-flex justify-content-center align-items-center"></div>
                     </div>
