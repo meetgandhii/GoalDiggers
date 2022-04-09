@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Step1 from "./Pages/Step1/step1";
 import Step2 from "./Pages/Step2/step2";
+import Medicinepage from './Pages/MedicinePage/medicinepage.js'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/step1" element={<Step1/>}/>
           <Route path="/step2" element={<Step2/>}/>
+          <Route path="/medicinepage" element={<Medicinepage/>}/>
           {/* <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} /> */}
