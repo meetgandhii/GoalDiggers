@@ -1,17 +1,19 @@
-if (process.env.NODE_ENV !== "production") {
-    require('dotenv').config();
-}
+// if (process.env.NODE_ENV !== "production") {
 
+// }
 
+require('dotenv').config();
 const express = require("express");
 const mongoose = require('mongoose');
 const cors=require('cors');
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const PORT = process.env.PORT;
+// const PORT = process.env.PORT;
 const app = express();
+const PORT= 3001;
+const MONGODB_URI = "mongodb+srv://goal:goal@goaldiggers.n6ogv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 
-mongoose.connect(process.env.MONGODB_URI , {
+mongoose.connect(MONGODB_URI , {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     // useCreateIndex: true,
