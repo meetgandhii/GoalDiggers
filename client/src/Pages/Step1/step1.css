@@ -8,8 +8,12 @@
 }
 ul{
     list-style: none;
+    padding: 0;
     text-align: start;
 }
 li{
+    text-align: start;
+}
+.columns {
     text-align: start;
 }
