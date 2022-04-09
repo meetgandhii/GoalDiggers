@@ -6,9 +6,13 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
+import "./step2.css";
+
+import Symptom from '../../Components/SypmtomCard/symptom';
+
 const steps = ['Choose a Symptom', 'Select Related Factors', 'View Possible Causes'];
 
-export default function HorizontalLinearStepper() {
+export default function Step2() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
 
@@ -57,17 +61,12 @@ export default function HorizontalLinearStepper() {
 
   return (
      <>
-     <div className='container'>
+     <div className='container step2'>
     <Box sx={{ width: '100%' }}>
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
-        //   if (isStepOptional(index)) {
-        //     labelProps.optional = (
-        //       <Typography variant="caption">Optional</Typography>
-        //     );
-        //   }
           if (isStepSkipped(index)) {
             stepProps.completed = false;
           }
@@ -91,7 +90,32 @@ export default function HorizontalLinearStepper() {
       ) : (
         <React.Fragment>
             {/* write step details here */}
-          <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>  
+
+          {(() => {
+      <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+      if(activeStep == 0){
+        return(<>
+<Symptom/>
+<h1>Step1 111</h1>
+</>
+          )
+      }else if(activeStep == 1){
+
+        return(<>
+          <Symptom/>
+          <h1>Step2 111</h1>
+          </>)
+
+      }else if(activeStep == 2){
+
+        return(<>
+          <Symptom/>
+          <h1>Step3 111</h1>
+          </>)
+
+      }
+    
+    }    )()}
           
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Button
