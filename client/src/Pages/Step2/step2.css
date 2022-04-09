@@ -1,5 +1,6 @@
-.step1{
-    background-image:url('./mygif.gif'); 
+.step2{
+    padding: 5%;
+    background-image:url('../Step1/mygif.gif'); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
