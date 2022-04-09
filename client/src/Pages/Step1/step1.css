@@ -1,3 +1,11 @@
+.step1{
+    /* background-image: url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhbHRoY2FyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    color: rgb(250, 249, 248);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
 .step{
  border:2px solid rgb(184, 181, 181);
  border-radius: 10px;
@@ -20,4 +28,8 @@ li{
 .bannertitle{
     font-weight: 400;
     font-size: 3em;
+}
+.infobox{
+    border:1px solid black;
+    border-radius: 10px;
 }
