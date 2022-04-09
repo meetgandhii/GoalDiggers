@@ -2,3 +2,16 @@
     width: 60%;
     padding-top: 2%;
 }
+
+.rad{
+    /* display :inline; */
+    display: flex;
+}
+
+.radio{
+    flex: 1 0 auto;
+  display: flex;
+  margin: 10%;
+  padding: 10% 10% 10% 0;
+  align-items: center;
+}

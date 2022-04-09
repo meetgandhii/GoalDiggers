@@ -9,6 +9,8 @@ import Typography from '@mui/material/Typography';
 import "./step2.css";
 
 import Symptom from '../../Components/SypmtomCard/symptom';
+import Factors from '../../Components/Factors/factors';
+import Causes from '../../Components/Causes/causes';
 
 const steps = ['Choose a Symptom', 'Select Related Factors', 'View Possible Causes'];
 
@@ -97,21 +99,20 @@ export default function Step2() {
       if(activeStep == 0){
         return(<>
 <Symptom/>
-<h1>Step1 111</h1>
+
 </>
           )
       }else if(activeStep == 1){
 
         return(<>
           
-          <h1>Step2 111</h1>
+          <Factors/>
           </>)
 
       }else if(activeStep == 2){
 
         return(<>
-          <Symptom/>
-          <h1>Step3 111</h1>
+          <Causes/>
           </>)
 
       }
