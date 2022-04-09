@@ -4,7 +4,9 @@
   "description": "The code for KJSCE Hackathon will be updated here",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server && nodemon index.js",
+    "client": "cd client && npm run start"
   },
   "repository": {
     "type": "git",
@@ -22,8 +24,10 @@
     "@material-ui/icons": "^4.11.3",
     "@mui/material": "^5.6.0",
     "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "fuse.js": "^6.5.3",
     "mongodb": "^4.5.0",
     "mongoose": "^6.2.10",
     "react-router-dom": "^6.3.0"
