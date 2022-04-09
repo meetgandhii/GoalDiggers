@@ -24,8 +24,8 @@ const Step1 = () => {
                     <div className="row">
                         <div id="adult">
                             <h3 id="head">Select Whether you are a Child or an Adult</h3>
-                            <a><img className="choice hov" src={adult}></img></a>
-                            <a><img className="choice hov" src={child}></img></a>
+                            <a href="/adult"><img className="choice hov" src={adult}></img></a>
+                            <a href="/child"><img className="choice hov" src={child}></img></a>
                             
                         </div>
                         <div className="col d-flex justify-content-center align-items-center"></div>
