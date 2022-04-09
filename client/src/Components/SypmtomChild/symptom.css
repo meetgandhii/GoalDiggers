@@ -1,5 +1,5 @@
 .sym{
-    width: 80%;
+    width: 60%;
     padding-top: 2%;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .radio{
-  flex: 1 0 auto;
+    flex: 1 0 auto;
   display: flex;
   margin: 10%;
   padding: 10% 10% 10% 0;
