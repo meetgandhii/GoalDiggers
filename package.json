@@ -1,0 +1,22 @@
+{
+  "name": "goaldiggers",
+  "version": "1.0.0",
+  "description": "The code for KJSCE Hackathon will be updated here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meetgandhii/GoalDiggers.git"
+  },
+  "author": "Harsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meetgandhii/GoalDiggers/issues"
+  },
+  "homepage": "https://github.com/meetgandhii/GoalDiggers#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
