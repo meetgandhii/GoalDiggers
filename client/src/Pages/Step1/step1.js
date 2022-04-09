@@ -23,8 +23,10 @@ const Step1 = () => {
                 <div className="container">
                     <div className="row">
                         <div id="adult" className="col d-flex justify-content-center align-items-center">
-                            <a><img src={adult} height="300px" width="200px"></img></a>
-                            <a><img src={child} height="300px" width="200px"></img></a>
+                            <div className="container">
+                            <a><img className="bbutton glow-button" src={adult} height="300px" width="200px"></img></a>
+                            <a><img className="bbutton glow-button" src={child} height="300px" width="200px"></img></a>
+                            </div>
                         </div>
                         <div className="col d-flex justify-content-center align-items-center"></div>
                     </div>
