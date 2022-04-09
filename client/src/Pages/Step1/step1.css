@@ -1,0 +1,19 @@
+.step{
+ border:2px solid rgb(184, 181, 181);
+ border-radius: 10px;
+ width:18rem;
+}
+.headings{
+    text-align: start;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    text-align: start;
+}
+li{
+    text-align: start;
+}
+.columns {
+    text-align: start;
+}
