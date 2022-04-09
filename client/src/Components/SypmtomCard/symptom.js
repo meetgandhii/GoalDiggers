@@ -35,30 +35,45 @@ const Symptom = () => {
         <div className="rad">
         <Row>
          <Col sm>
-        <FormControlLabel  className="radio" value="1" control={<Radio />} label="Symptom Name" />
+        <FormControlLabel  className="radio" value="1" control={<Radio />} label="Abdominal pain in adults" />
         </Col> 
         <Col sm>
-        <FormControlLabel  className="radio" value="2" control={<Radio />} label="Symptom Name" />
+        <FormControlLabel  className="radio" value="2" control={<Radio />} label="Nasal congestion in adults" />
         </Col>
         <Col sm>
-        <FormControlLabel  className="radio" value="3" control={<Radio />} label="Symptom Name" />
+        <FormControlLabel  className="radio" value="3" control={<Radio />} label="Sore throat in adults" />
         </Col>
         <Col sm>
-        <FormControlLabel  className="radio" value="4" control={<Radio />} label="Symptom Name" />
+        <FormControlLabel  className="radio" value="4" control={<Radio />} label="Blood in stool in adults" />
         </Col>
         </Row>  
         <Row>
         <Col sm>
-        <FormControlLabel  className="radio" value="5" control={<Radio />} label="Symptom Name" />
+        <FormControlLabel  className="radio" value="5" control={<Radio />} label="Chest pain in adults" />
         </Col>
         <Col sm>
-        <FormControlLabel  className="radio" value="6" control={<Radio />} label="Symptom Name" />
+        <FormControlLabel  className="radio" value="6" control={<Radio />} label="Cough in adults" />
         </Col>
         <Col sm>
-        <FormControlLabel  className="radio" value="7" control={<Radio />} label="Symptom Name" />
+        <FormControlLabel  className="radio" value="7" control={<Radio />} label="Diarrhea in adults" />
         </Col>
         <Col sm>
-        <FormControlLabel  className="radio" value="8" control={<Radio />} label="Symptom Name" />
+        <FormControlLabel  className="radio" value="8" control={<Radio />} label="Difficulty swallowing in adults" />
+        </Col>
+        </Row>
+        <Row>
+        <Col sm>
+        <FormControlLabel  className="radio" value="9" control={<Radio />} label="Eye discomfort and redness in adults" />
+        </Col>
+        <Col sm>
+        <FormControlLabel  className="radio" value="10" control={<Radio />} label="Foot pain or ankle pain in adults
+" />
+        </Col>
+        <Col sm>
+        <FormControlLabel  className="radio" value="11" control={<Radio />} label="Heart palpitations in adults" />
+        </Col>
+        <Col sm>
+        <FormControlLabel  className="radio" value="12" control={<Radio />} label="Low back pain in adults" />
         </Col>
         </Row>
         </div>
@@ -67,20 +82,7 @@ const Symptom = () => {
 
 
 
-    {/* <Grid container spacing={4} columns={12}>
-  <Grid item xs={6} >
-    <Item>Symptom Name</Item>
-  </Grid>
-  <Grid item xs={6}>
-    <Item>Symptom Name</Item>
-  </Grid>
-  <Grid item xs={6}>
-    <Item>Symptom Name</Item>
-  </Grid>
-  <Grid item xs={6}>
-    <Item>Symptom Name</Item>
-  </Grid>
-</Grid> */}
+    
 </div>
   );
 };

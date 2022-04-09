@@ -11,6 +11,7 @@ import "./step3.css";
 import Symptom from '../../Components/SypmtomCard/symptom';
 import Factors from '../../Components/Factors/factors';
 import Causes from '../../Components/Causes/causes';
+import SymptomChild from '../../Components/SypmtomChild/symptom';
 
 const steps = ['Choose a Symptom', 'Select Related Factors', 'View Possible Causes'];
 
@@ -98,7 +99,7 @@ export default function Step2_child() {
 
       if(activeStep == 0){
         return(<>
-<Symptom/>
+<SymptomChild/>
 
 </>
           )
