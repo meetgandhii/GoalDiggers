@@ -90,9 +90,10 @@ export default function Step2() {
       ) : (
         <React.Fragment>
             {/* write step details here */}
-
+            <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
           {(() => {
-      <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+      
+
       if(activeStep == 0){
         return(<>
 <Symptom/>
@@ -102,7 +103,7 @@ export default function Step2() {
       }else if(activeStep == 1){
 
         return(<>
-          <Symptom/>
+          
           <h1>Step2 111</h1>
           </>)
 
@@ -127,12 +128,6 @@ export default function Step2() {
               Back
             </Button>
             <Box sx={{ flex: '1 1 auto' }} />
-            {/* {isStepOptional(activeStep) && (
-              <Button color="inherit" onClick={handleSkip} sx={{ mr: 1 }}>
-                Skip
-              </Button>
-            )} */}
-
             <Button onClick={handleNext}>
               {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
             </Button>
