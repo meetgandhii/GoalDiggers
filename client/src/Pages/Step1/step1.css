@@ -17,3 +17,7 @@ li{
 .columns {
     text-align: start;
 }
+.bannertitle{
+    font-weight: 400;
+    font-size: 3em;
+}

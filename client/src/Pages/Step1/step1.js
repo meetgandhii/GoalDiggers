@@ -10,9 +10,9 @@ import './step1.css'
 const Step1 = () => {
   return (
     <>
-    {/* <div>Step1</div> */}
-    <div>
-    <div className="container">
+    <h1>Getting Started</h1>
+    
+    <div className="container my-5 py-2">
         <div className="row">
             <div className="col columns d-flex flex-column">
                 <h4 className="headings">Symptoms</h4>
@@ -24,10 +24,24 @@ const Step1 = () => {
             </div>
         </div>
     </div>
-    <div className="container d-flex mt-5 pt-5 flex-column">
+    <div className="container py-2">
+        <h3 className="bannertitle">Talking about your health means sharing information about how you feel physically, emotionally, and mentally.</h3> 
+        <div className="container px-5">
+        <p className="py-2 px-4">Knowing how to describe your symptoms and bring up other concerns will help you become a partner in your health care.A symptom is evidence of a disease or disorder in the body. Examples of symptoms include pain, fever, a lump or bump, unexplained weight loss or gain, or having a hard time sleeping.
+        Be clear and concise when describing your symptoms.</p>
+        </div>
+    </div>
+    <div className="container d-flex mt-2 pt-2 flex-column justify-content-center align-items-center">
+        <div class="card text-white bg-dark mb-3 step">
+             <div class="card-header">Choose</div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary m-2">Adult</button>
+                    <button type="button" class="btn btn-primary m-2">Child</button>
+                </div>
+            </div>
           
-            {/* <div class="container"> */}
-                <div class="row">
+           
+                {/* <div class="row">
                     <div className="col-4"></div>
                     <div class="col-4 columns">
                         Adult Symptoms
@@ -46,11 +60,9 @@ const Step1 = () => {
                     <li><button type="button" class="btn btn-primary my-1">Primary</button></li>
                     </ul>
                     </div>
-                    {/* <div className="col-2"></div> */}
-                    {/* </div> */}
-                </div>
+                   
+                </div> */}
 
-        </div>
         </div>
     </>
   );
