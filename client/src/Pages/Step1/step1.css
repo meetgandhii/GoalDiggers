@@ -1,17 +1,15 @@
 .step1{
-    background-image: url("background1.jpg");
-    height: 100%;
-
-  /* Create the parallax scrolling effect */
-  /* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-    /* color: rgb(250, 249, 248); */
+    background-image:url('./mygif.gif'); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    /* background-image: ""; */
+    /* color: rgb(250, 249, 248);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  */
 }
 @media only screen and (max-device-width: 1366px) {
     .step1 {
@@ -25,6 +23,11 @@
 }
 .headings{
     text-align: start;
+    color: #033D68;
+}
+#head1{
+    font-weight: 600;
+    font-size: 10%;
 }
 ul{
     list-style: none;
@@ -41,9 +44,10 @@ li{
     font-weight: 800;
     font-size: 3em;
 }
-.infobox{
+/* .infobox{
     border:1px solid black;
     border-radius: 10px;
-    /* background-color: ; */
-/* #00ffac */
+} */
+#translogo{
+    width: 500px;
 }
