@@ -63,10 +63,10 @@ const Symptom = () => {
         </Row>
         <Row>
         <Col sm>
-        <FormControlLabel  className="radio" value="9" control={<Radio />} label="Eye discomfort and redness in adults" />
+        <FormControlLabel  className="radio" value="9" control={<Radio />} label="Eye discomfort in adults" />
         </Col>
         <Col sm>
-        <FormControlLabel  className="radio" value="10" control={<Radio />} label="Foot pain or ankle pain in adults
+        <FormControlLabel  className="radio" value="10" control={<Radio />} label="Foot pain in adults
 " />
         </Col>
         <Col sm>
