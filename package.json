@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/meetgandhii/GoalDiggers#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.2.10"
   }
 }
