@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/meetgandhii/GoalDiggers#readme",
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/material": "^5.6.0",
     "cors": "^2.8.5",
     "csvtojson": "^2.0.10",
     "dotenv": "^16.0.0",
