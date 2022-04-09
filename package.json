@@ -4,7 +4,9 @@
   "description": "The code for KJSCE Hackathon will be updated here",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server && nodemon index.js",
+    "client": "cd client && npm run start"
   },
   "repository": {
     "type": "git",
