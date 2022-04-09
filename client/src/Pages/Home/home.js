@@ -9,6 +9,9 @@ const Home = () => {
       <Grid container paddingLeft="15px" paddingRight="15px" spacing={2}
       >
       <ProductCard/>
+      <Grid  container>
+          
+      </Grid>
       </Grid>
     </>
   );
