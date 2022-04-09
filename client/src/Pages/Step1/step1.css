@@ -11,6 +11,11 @@
     -o-background-size: cover;
     background-size: cover;  */
 }
+@media only screen and (max-device-width: 1366px) {
+    .step1 {
+      background-attachment: scroll;
+    }
+  }
 .step{
  border:2px solid rgb(184, 181, 181);
  border-radius: 10px;
@@ -22,7 +27,7 @@
 }
 #head1{
     font-weight: 600;
-    font-size: 10%;
+    font-size: 2em;
 }
 ul{
     list-style: none;
@@ -36,7 +41,7 @@ li{
     text-align: start;
 }
 .bannertitle{
-    font-weight: 400;
+    font-weight: 800;
     font-size: 3em;
 }
 /* .infobox{
@@ -45,4 +50,42 @@ li{
 } */
 #translogo{
     width: 500px;
+}
+.bodd{
+    padding: 5px;
+    padding-top: 15px;
+    color: #033D68;
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    font-weight: 550;
+}
+#head2{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+}
+.container{
+    color: #033D68;   
+}
+.pad{
+    height: 500px;
+}
+#adult{
+    margin-top: 100px;
+}
+.choice{
+    height: 300px;
+}
+.hov{
+    filter: grayscale(100%);
+    filter: contrast(50%);
+    transition: 1s;
+}
+.hov:hover{
+    filter: grayscale(0%);
+    filter: contrast(100%);
+}
+#head{
+    padding-top: -20px !important;
+    padding-bottom: 20px;
 }
