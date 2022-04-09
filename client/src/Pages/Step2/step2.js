@@ -5,7 +5,6 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
 import "./step2.css";
 
 import Symptom from '../../Components/SypmtomCard/symptom';
@@ -14,7 +13,7 @@ import Causes from '../../Components/Causes/causes';
 
 const steps = ['Choose a Symptom', 'Select Related Factors', 'View Possible Causes'];
 
-export default function Step2() {
+export default function Step2_adult() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
 

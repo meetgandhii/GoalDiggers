@@ -1,0 +1,49 @@
+.step2{
+    padding: 5%;
+    background-image:url('../Step1/mygif.gif'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-image: ""; */
+    /* color: rgb(250, 249, 248);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  */
+}
+.step{
+ border:2px solid rgb(184, 181, 181);
+ border-radius: 10px;
+ width:18rem;
+}
+.headings{
+    text-align: start;
+    color: #033D68;
+}
+#head1{
+    font-weight: 600;
+    font-size: 10%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    text-align: start;
+}
+li{
+    text-align: start;
+}
+.columns {
+    text-align: start;
+}
+.bannertitle{
+    font-weight: 400;
+    font-size: 3em;
+}
+/* .infobox{
+    border:1px solid black;
+    border-radius: 10px;
+} */
+#translogo{
+    width: 500px;
+}
