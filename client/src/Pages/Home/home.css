@@ -83,6 +83,7 @@ li {
 #translogo {
     /* width: 100px; */
     height: 300px;
+    filter: contrast(250%);
 }
 
 .bodd {
