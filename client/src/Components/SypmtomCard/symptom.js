@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Row ,Col} from "react-bootstrap";
+import { Card ,Col} from "react-bootstrap";
 import { Grid } from "@mui/material";
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
@@ -33,7 +33,7 @@ const Symptom = () => {
         name="radio-buttons-group"
       >
         <div className="rad">
-        <Row>
+        <div>
          <Col sm>
         <FormControlLabel  className="radio" value="1" control={<Radio />} label="Abdominal pain in adults" />
         </Col> 
@@ -46,8 +46,8 @@ const Symptom = () => {
         <Col sm>
         <FormControlLabel  className="radio" value="4" control={<Radio />} label="Blood in stool in adults" />
         </Col>
-        </Row>  
-        <Row>
+        </div>  
+        <div>
         <Col sm>
         <FormControlLabel  className="radio" value="5" control={<Radio />} label="Chest pain in adults" />
         </Col>
@@ -60,13 +60,13 @@ const Symptom = () => {
         <Col sm>
         <FormControlLabel  className="radio" value="8" control={<Radio />} label="Difficulty swallowing in adults" />
         </Col>
-        </Row>
-        <Row>
+        </div>
+        <div>
         <Col sm>
-        <FormControlLabel  className="radio" value="9" control={<Radio />} label="Eye discomfort and redness in adults" />
+        <FormControlLabel  className="radio" value="9" control={<Radio />} label="Eye discomfort in adults" />
         </Col>
         <Col sm>
-        <FormControlLabel  className="radio" value="10" control={<Radio />} label="Foot pain or ankle pain in adults
+        <FormControlLabel  className="radio" value="10" control={<Radio />} label="Foot pain in adults
 " />
         </Col>
         <Col sm>
@@ -75,7 +75,7 @@ const Symptom = () => {
         <Col sm>
         <FormControlLabel  className="radio" value="12" control={<Radio />} label="Low back pain in adults" />
         </Col>
-        </Row>
+        </div>
         </div>
       </RadioGroup>
     </FormControl>

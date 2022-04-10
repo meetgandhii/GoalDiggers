@@ -1,0 +1,25 @@
+.sym{
+    width: 60%;
+    padding-top: 2%;
+
+}
+
+.rad{
+    /* display :inline; */
+    display: flex;
+}
+
+.radio{
+  flex: 1 0 auto;
+  display: inline;
+  margin: 10%;
+  padding: 10% 10% 10% 0;
+  align-items: center;
+}
+
+.factor{
+    /* padding: 5% 10% 0 0 ; */
+    flex-wrap: row;
+   display: flex;
+   /* align-items: center; */
+}

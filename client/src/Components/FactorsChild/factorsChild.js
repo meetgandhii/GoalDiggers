@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 import { Grid } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
@@ -11,7 +11,7 @@ import FormLabel from "@mui/material/FormLabel";
 import { useStore } from "../../zusstand/useStore.js";
 import { useCallback, useState, useEffect } from "react";
 
-import "./factors.css"
+import "./factorsChild.css"
 
 const childFactors = [
   "Children_Nausea_Or_Vomit_Full",
@@ -43,131 +43,114 @@ const ChildFactors = () => {
 
   return (
     <div className="container sym">
-     <div>
+{/* Blue-colored skin or lips
+Chills or sweating
+Cough
+Difficult or painful swallowing
+Difficult or raspy breathing
+Enlarged, tender glands (lymph nodes) in neck
+Fever
+Headache or facial pain
+Heartburn
+Hoarse or muffled voice
+Mild body aches
+Red, swollen tonsils
+Runny or stuffy nose
+Skin rash
+Sneezing
+Watery eyes
+White patches or pus on tonsils
+Yellow or greenish phlegm or discharge from nose */}
       <FormControl>
         <FormLabel id="demo-radio-buttons-group-label">
-          Nasal Congestion is
+          Accompanied By
         </FormLabel>
         <RadioGroup
           aria-labelledby="demo-radio-buttons-group-label"
           defaultValue="Symptom Name"
           name="radio-buttons-group"
         >
-          <div className="rad">
-            <Row className="factor">
-              <Col sm>
+          <div className="container">
+            <div className="container factor">
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="1"
                   control={<Radio />}
-                  label="New or recent"
-                  onClick={() => handleChange("New or recent")}
+                  label="Blue-colored skin or lips"
+                  onClick={() => handleChange("Blue-colored skin or lips")}
                 />
               </Col>
-              <Col sm>
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="2"
                   control={<Radio />}
-                  label="Ongoing or persistent"
-                  onClick={() => handleChange("Ongoing or persistent")}
-                />
-              </Col>   
-            </Row>
-          </div>
-        </RadioGroup>
-      </FormControl>
-      </div>
-      <div>
-      <FormControl>
-        <FormLabel id="demo-radio-buttons-group-label">
-          Nasal Discharge is
-        </FormLabel>
-        <RadioGroup
-          aria-labelledby="demo-radio-buttons-group-label"
-          defaultValue="Nasal Discharge"
-          name="radio-buttons-group"
-        >
-          <div className="rad">
-            <Row className="factor">
-              <Col sm>
-                <FormControlLabel
-                  className="radio"
-                  value="1"
-                  control={<Radio />}
-                  label="Clear or watery"
-                  onClick={() => handleChange("Clear or watery")}
+                  label="Chills or sweating"
+                  onClick={() => handleChange("Chills or sweating")}
                 />
               </Col>
-              <Col sm>
+              <Col>
                 <FormControlLabel
                   className="radio"
-                  value="2"
-                  control={<Radio />}
-                  label="Yellow or greenish"
-                  onClick={() => handleChange("Yellow or greenish")}
-                />
-              </Col>   
-            </Row>
-          </div>
-        </RadioGroup>
-      </FormControl>
-      </div>
-
-      <div>
-      <FormControl>
-        <FormLabel id="demo-radio-buttons-group-label">
-          Accompanieed By
-        </FormLabel>
-        <RadioGroup
-          aria-labelledby="demo-radio-buttons-group-label"
-          defaultValue="Nasal"
-          name="radio-buttons-group"
-        >
-          <div className="rad">
-            <Row className="factor">
-              <Col sm>
-                <FormControlLabel
-                  className="radio"
-                  value="1"
-                  control={<Radio />}
-                  label="Bad breath"
-                  onClick={() => handleChange("Bad breath")}
-                />
-              </Col>
-              <Col sm>
-                <FormControlLabel
-                  className="radio"
-                  value="2"
+                  value="3"
                   control={<Radio />}
                   label="Cough"
                   onClick={() => handleChange("Cough")}
                 />
               </Col>
-              <Col sm>
+              <Col>
                 <FormControlLabel
                   className="radio"
-                  value="3"
+                  value="4"
                   control={<Radio />}
-                  label="Sore throat"
-                  onClick={() => handleChange("Sore throat")}
+                  label="Difficult or painful swallowing"
+                  onClick={() => handleChange("Difficult or painful swallowing")}
                 />
               </Col>
-              <Col sm>
+            </div>
+            <div className="container factor">
+              <Col>
                 <FormControlLabel
                   className="radio"
-                  value="3"
+                  value="5"
                   control={<Radio />}
-                  label="Watery eyes"
-                  onClick={() => handleChange("Watery eyes")}
+                  label="Enlarged, tender glands (lymph nodes) in neck"
+                  onClick={() => handleChange("Enlarged, tender glands (lymph nodes) in neck")}
                 />
-              </Col>   
-            </Row>
+              </Col>
+              <Col>
+                <FormControlLabel
+                  className="radio"
+                  value="6"
+                  control={<Radio />}
+                  label="Fever"
+                  onClick={() => handleChange("Fever")}
+                />
+              </Col>
+              <Col>
+                <FormControlLabel
+                  className="radio"
+                  value="7"
+                  control={<Radio />}
+                  label="Headache or facial pain"
+                  onClick={() => handleChange("Headache or facial pain")}
+                />
+              </Col>
+              <Col>
+                <FormControlLabel
+                  className="radio"
+                  value="8"
+                  control={<Radio />}
+                  label="Heartburn"
+                  onClick={() => handleChange("Heartburn")}
+                />
+              </Col>
+              
+            </div>
           </div>
         </RadioGroup>
       </FormControl>
-      </div>
-
     </div>
   );
 };

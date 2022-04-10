@@ -10,6 +10,7 @@ import "./step2.css";
 import Symptom from '../../Components/SypmtomCard/symptom';
 import Factors from '../../Components/Factors/factors';
 import Causes from '../../Components/Causes/causes';
+import AdultCause from '../../Components/AdultCauses/adultCause';
 
 const steps = ['Choose a Symptom', 'Select Related Factors', 'View Possible Causes'];
 
@@ -62,7 +63,7 @@ export default function Step2_adult() {
 
   return (
      <>
-     <div className='container step2'>
+     <div className='step2'>
     <Box sx={{ width: '100%' }}>
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
@@ -111,7 +112,7 @@ export default function Step2_adult() {
       }else if(activeStep == 2){
 
         return(<>
-          <Causes/>
+          <AdultCause/>
           </>)
 
       }

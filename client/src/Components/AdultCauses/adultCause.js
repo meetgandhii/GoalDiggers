@@ -11,50 +11,34 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 
-import "./causes.css";
+import "./adultCause.css";
 
-const Causes = () => {
+const AdultCause = () => {
   return (
     <div className="container sym">
       <Typography>
         These diseases and conditions match at least one of the factors you
         selected. Those with the most matches are listed first.
       </Typography>
-      <div className="container cause">
+      <div className="container my-2 cause">
         <div>
           <Button  component={Link} to="/medicine" type="button">
-          Influenza (flu)
+          Acute sinusitis
           </Button>
         </div>
         <div>
           <Button  component={Link} to="/medicine" type="button">
-          Mononucleosis
+          Chronic sinusitis
           </Button>
         </div>
-        {/* <FormControl>
-      <FormLabel id="demo-radio-buttons-group-label">Accompanied By</FormLabel>
-      <RadioGroup
-        aria-labelledby="demo-radio-buttons-group-label"
-        defaultValue="Symptom Name"
-        name="radio-buttons-group"
-      >
-        <div className="rad">
-        <Row>
-         <Col sm>
-        <FormControlLabel  className="radio" value="1" control={<Radio />} label="Gastritis" />
-        </Col> 
-        <Col sm>
-        <FormControlLabel  className="radio" value="2" control={<Radio />} label="Peptic ulcer" />
-        </Col>
-        </Row>  
-       
+        <div>
+          <Button  component={Link} to="/medicine" type="button">
+          Commmon Cold
+          </Button>
         </div>
-      </RadioGroup>
-    </FormControl> */}
-      </div>
-      {/* <div className="container sym new"></div> */}
+    </div>
     </div>
   );
 };
 
-export default Causes;
+export default AdultCause;
