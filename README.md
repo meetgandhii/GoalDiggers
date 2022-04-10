@@ -21,3 +21,5 @@ Several headbutts were involved while searching through the humongous database.
 ![](Images/AskSymptoms.PNG)
 ![](Images/AskFactors.PNG)
 ![](Images/PossibleCauses.PNG)
+
+![](Images/techStack.PNG)
