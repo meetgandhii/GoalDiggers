@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 import { Grid } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
@@ -70,9 +70,9 @@ Yellow or greenish phlegm or discharge from nose */}
           defaultValue="Symptom Name"
           name="radio-buttons-group"
         >
-          <div className="rad">
-            <Row className="factor">
-              <Col sm>
+          <div className="container">
+            <div className="container factor">
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="1"
@@ -81,7 +81,7 @@ Yellow or greenish phlegm or discharge from nose */}
                   onClick={() => handleChange("Blue-colored skin or lips")}
                 />
               </Col>
-              <Col sm>
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="2"
@@ -90,7 +90,7 @@ Yellow or greenish phlegm or discharge from nose */}
                   onClick={() => handleChange("Chills or sweating")}
                 />
               </Col>
-              <Col sm>
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="3"
@@ -99,7 +99,7 @@ Yellow or greenish phlegm or discharge from nose */}
                   onClick={() => handleChange("Cough")}
                 />
               </Col>
-              <Col sm>
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="4"
@@ -108,9 +108,9 @@ Yellow or greenish phlegm or discharge from nose */}
                   onClick={() => handleChange("Difficult or painful swallowing")}
                 />
               </Col>
-            </Row>
-            <Row>
-              <Col sm>
+            </div>
+            <div className="container factor">
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="5"
@@ -119,7 +119,7 @@ Yellow or greenish phlegm or discharge from nose */}
                   onClick={() => handleChange("Enlarged, tender glands (lymph nodes) in neck")}
                 />
               </Col>
-              <Col sm>
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="6"
@@ -128,7 +128,7 @@ Yellow or greenish phlegm or discharge from nose */}
                   onClick={() => handleChange("Fever")}
                 />
               </Col>
-              <Col sm>
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="7"
@@ -137,7 +137,7 @@ Yellow or greenish phlegm or discharge from nose */}
                   onClick={() => handleChange("Headache or facial pain")}
                 />
               </Col>
-              <Col sm>
+              <Col>
                 <FormControlLabel
                   className="radio"
                   value="8"
@@ -146,7 +146,8 @@ Yellow or greenish phlegm or discharge from nose */}
                   onClick={() => handleChange("Heartburn")}
                 />
               </Col>
-            </Row>
+              
+            </div>
           </div>
         </RadioGroup>
       </FormControl>

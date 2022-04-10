@@ -1,6 +1,7 @@
 .sym{
     width: 60%;
     padding-top: 2%;
+
 }
 
 .rad{
@@ -10,7 +11,7 @@
 
 .radio{
   flex: 1 0 auto;
-  display: flex;
+  display: inline;
   margin: 10%;
   padding: 10% 10% 10% 0;
   align-items: center;
@@ -18,7 +19,7 @@
 
 .factor{
     /* padding: 5% 10% 0 0 ; */
-    flex-wrap: wrap;
+    flex-wrap: row;
    display: flex;
-   align-items: center;
+   /* align-items: center; */
 }
