@@ -5,6 +5,8 @@ import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { useStore} from "../../zusstand/useStore.js";
+import { useCallback, useState, useEffect } from "react";
 
 import "./step3.css";
 
@@ -12,8 +14,9 @@ import Symptom from "../../Components/SypmtomCard/symptom";
 import Factors from "../../Components/Factors/factors";
 import Causes from "../../Components/Causes/causes";
 import SymptomChild from "../../Components/SypmtomChild/symptom";
+import ChildFactors from "../../Components/FactorsChild/factorsChild.js";
 
-const { symptom } = require('../../Components/SypmtomChild/symptom')
+// const { symptomName } = require('../../Components/SypmtomChild/symptom')
 
 const steps = [
   "Choose a Symptom",
@@ -21,7 +24,15 @@ const steps = [
   "View Possible Causes",
 ];
 
-export default function Step2_child() {
+
+
+function Step2_child() {
+  const sym= useStore(state => state.symptom);
+  useEffect(() => {
+    // console.log(0);
+    console.log(sym)
+  }, [sym])
+  
 
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
@@ -70,7 +81,7 @@ export default function Step2_child() {
 
   return (
     <>
-      <div className="container step2">
+      <div className="step2">
         <Box sx={{ width: "100%" }}>
           <Stepper activeStep={activeStep}>
             {steps.map((label, index) => {
@@ -107,15 +118,29 @@ export default function Step2_child() {
                   return (
                     <>
                       <SymptomChild />
-                      
+                      {/* <Typography>This is :{sym}</Typography> */}
                     </>
                   );
                 } else if (activeStep == 1) {
+                // if sym is this do this
+                if(sym == "Nausea or vomiting in children"){
                   return (
                     <>
                       <Factors />
                     </>
                   );
+
+                }else{
+                  // if( sym == "Sore throat in children")
+                  return (
+                    <>
+                      <ChildFactors/>
+                    </>
+                  );
+                }
+
+
+                  
                 } else if (activeStep == 2) {
                   return (
                     <>
@@ -146,3 +171,5 @@ export default function Step2_child() {
     </>
   );
 }
+
+export default Step2_child;

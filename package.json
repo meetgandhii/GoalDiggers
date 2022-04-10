@@ -23,6 +23,7 @@
     "@emotion/styled": "^11.8.1",
     "@material-ui/icons": "^4.11.3",
     "@mui/material": "^5.6.0",
+    "axios": "^0.26.1",
     "cors": "^2.8.5",
     "csvtojson": "^2.0.10",
     "dotenv": "^16.0.0",
@@ -30,6 +31,7 @@
     "fuse.js": "^6.5.3",
     "mongodb": "^4.5.0",
     "mongoose": "^6.2.10",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "zustand": "^3.7.2"
   }
 }

@@ -62,7 +62,7 @@ export default function Step2_adult() {
 
   return (
      <>
-     <div className='container step2'>
+     <div className='step2'>
     <Box sx={{ width: '100%' }}>
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
