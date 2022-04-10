@@ -12,3 +12,11 @@ Integrating Python scripts within the MERN Stack framework.
 While trying to use web scraped data, dynamically on the React Web App,
 Faced multiple bugs in trying to maintain the state management inside the development environment.
 Several headbutts were involved while searching through the humongous database.
+
+## Pages of Our Application
+
+![](Images/PossibleCauses.PNG)
+![](Images/d2.png)
+![](Images/d3.png)
+![](Images/d4.png)
+![](Images/d5.png)
