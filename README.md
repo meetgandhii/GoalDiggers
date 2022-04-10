@@ -15,8 +15,9 @@ Several headbutts were involved while searching through the humongous database.
 
 ## Pages of Our Application
 
+
+![](Images/home.PNG)
+![](Images/step1.PNG)
+![](Images/AskSymptoms.PNG)
+![](Images/AskFactors.PNG)
 ![](Images/PossibleCauses.PNG)
-![](Images/d2.png)
-![](Images/d3.png)
-![](Images/d4.png)
-![](Images/d5.png)
